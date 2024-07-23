@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- Main CSS File -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <header id="header" class="header d-flex align-items-center sticky-top">
+            <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        
+              <a href="index.html" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1 class="sitename">Federico Porcel</h1>
+              </a>
+        
+              <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a href="index.html" class="active">Home</a></li>
+                  <li><a href="about.html">Proyectos</a></li>
+                  <li><a href="contact.html">Contacto</a></li>
+                  <li> <a href="portfolio.html">Habilidades</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+              </nav>
+        
+            </div>
+          </header>
+          <div class="page-title light-background">
+            <div class="container">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-lg-12">
+                  <h1 class="page-title-heading">Proyectos</h1>
+                  <nav aria-label="breadcrumb">
+                    <ol class="custom-breadcrumb breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item" aria-current="page"> <a href="about.html"> Proyectos </a></li>
+                      <li class="breadcrumb-item active current" aria-current="page">Calculadora</li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+    <style>
+        .full-width{
+            width: 100%;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="assets/js/calculadoraScript.js"></script>
+    
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    </head>
+
+    <body class="bg-image"
+    style="
+      background-image: url('wooden\bg.jpg');
+      height: 100vh;
+    ">
+        <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-3">   </div>
+            <div class="col-lg-6 text-center shadow pb-3">
+            <div class="row py-3 my-3 btn btn-primary full-width">
+                <div class="col">
+                    Calculadora
+                </div>
+                </div>
+                
+                </div>
+                <div class="row">
+                    <div class="col my-3">
+                     <textarea class="full.width p-3 text-right" readonly id="history" rows="4 "></textarea>
+                    </div>
+                    </div>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="col">
+                        <input type="text" class="full-width" id="result"/>
+    
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="row">
+                            <div class="col">
+                                <input type="button" value="1" class="full-width" onclick="dis('1')">
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="button" value="4" class="full-width" onclick="dis('4')">
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="button" value="7" class="full-width" onclick="dis('7')">
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="button" value="." class="full-width" onclick="dis('.')">
+                                        </div>
+                                        </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                            <div class="col">
+                                <input type="button" value="2" class="full-width" onclick="dis('2')">
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="button" value="5" class="full-width" onclick="dis('5')">
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="button" value="8" class="full-width" onclick="dis('8')">
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="button" value="0" class="full-width" onclick="dis('0')">
+                                        </div>
+                                        </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                            <div class="col">
+                                <input type="button" value="3" class="full-width" onclick="dis('3')">
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="button" value="6" class="full-width" onclick="dis('6')">
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="button" value="9" class="full-width" onclick="dis('9')">
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="button" value="=" class="full-width" onclick="solve()">
+                                        </div>
+                                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="row">
+                        <div class="col">
+                            <input type="button" value="C" class="full-width" onclick="clr('')">
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="button" value="/" class="full-width" onclick="dis('/')">
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="button" value="-" class="full-width" onclick="dis('-')">
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="button" value="+" class="full-width" onclick="dis('+')">
+                                    </div>
+                                   </div>
+                                   <div class="row">
+                            <div class="col">
+                                <input type="button" value="*" class="full-width" onclick="dis('*')">
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                
+                </div>
+                </div>
+                </div>
+            
+    </body>
+    
+    <footer>
+        <script src="assets/js/calculadoraScript.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+      </footer>
+</html>

@@ -1,0 +1,62 @@
+div{
+    /*background-color: yellow;*/
+    width: 20px;
+    height: 20px;
+}
+
+.grid{
+    background-color: blue;
+    height: 400px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;    
+}
+.block{
+    background-color: blue;
+}
+.block2{
+    background-color: purple;
+}
+#juego {
+    opacity:0.3;
+    width: 600px;
+    height: 600px;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+td {
+    width: 25%;
+    height: 25%;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.botones {
+    margin-left: 700px;
+    margin-top: 40px;
+}
+
+input {
+    width: 100px;
+    height: 40px;
+    background-color:chocolate;
+    color: white;
+    font-style: italic;
+}
+
+p {
+    margin-left: 640px;
+    color: chocolate;
+    font: 50px bold;
+}
